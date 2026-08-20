@@ -1,4 +1,4 @@
-AI HAND GESTURE CONTROL
+🤖 AI GESTURE HAND CONTROL
 
 Control Your Computer With Just One Hand
 
@@ -56,8 +56,6 @@ Python
 └── PyAutoGUI    → Mouse Automation
 ⚙️ Installation
 1. Clone the repository
-git clone https://github.com/your-username/ai-hand-mouse.git
-cd ai-hand-mouse
 2. Install dependencies
 pip install opencv-python mediapipe pyautogui
 3. Run
