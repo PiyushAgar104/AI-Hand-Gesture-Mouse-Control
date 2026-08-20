@@ -1,111 +1,119 @@
-AI Hand Gesture Mouse Control
+AI HAND GESTURE CONTROL
 
-A real-time AI-based virtual mouse that allows users to control their computer mouse using hand gestures through a webcam.
+Control Your Computer With Just One Hand
 
-The project uses OpenCV for video processing, MediaPipe for hand tracking, and PyAutoGUI for controlling the system mouse.
+AI Hand Mouse is a real-time computer vision project that transforms your webcam into a virtual mouse. Move your cursor, click, right-click, and open applications — all using simple hand gestures.
 
-Features
-Real-time hand tracking
-Smooth mouse cursor movement
-Index finger based cursor control
-Pinch gesture for left click
-Double pinch for double click and opening files/apps
-Two-finger gesture for right click
-Webcam-based interaction
-No physical mouse required
-Gesture Controls
-Gesture	Action
+No mouse. No touch. Just your hand.
+
+🚀 What Can It Do?
+🖐️ Gesture	🖥️ Action
 ☝️ Index Finger	Move Cursor
-🤏 Index + Thumb Pinch	Left Click
+🤏 Pinch	Left Click
 🤏 → Release → 🤏	Double Click / Open
-✌️ Index + Middle Finger	Right Click
-Q	Exit
-Technologies Used
+✌️ Index + Middle	Right Click
+⌨️ Q	Exit
+🧠 How It Works
+        📷 Webcam
+            │
+            ▼
+     🔍 OpenCV Processing
+            │
+            ▼
+      ✋ MediaPipe
+    Hand Landmark Detection
+            │
+            ▼
+     🧠 Gesture Recognition
+            │
+            ▼
+       🖱️ PyAutoGUI
+            │
+            ▼
+      💻 Mouse Control
+
+The webcam captures your hand in real time.
+
+MediaPipe detects 21 hand landmarks, while the program calculates finger positions and distances to identify gestures.
+
+The index finger position is mapped to your screen coordinates to create smooth cursor movement.
+
+✨ Key Features
+🎥 Real-time webcam tracking
+✋ 21-point hand landmark detection
+🖱️ Touchless mouse control
+🎯 Smooth cursor movement
+🤏 Pinch-based clicking
+🖱️ Right-click gesture
+📂 Double-click to open files/apps
+⚡ Real-time gesture recognition
+🔒 Runs locally on your computer
+🛠️ Tech Stack
 Python
-OpenCV
-MediaPipe
-PyAutoGUI
-Computer Vision
-Hand Gesture Recognition
-Installation
-
-Clone the repository:
-
-git clone https://github.com/your-username/ai-hand-mouse-control.git
-cd ai-hand-mouse-control
-
-Install the required libraries:
-
+│
+├── OpenCV       → Computer Vision
+├── MediaPipe    → Hand Tracking
+└── PyAutoGUI    → Mouse Automation
+⚙️ Installation
+1. Clone the repository
+git clone https://github.com/your-username/ai-hand-mouse.git
+cd ai-hand-mouse
+2. Install dependencies
 pip install opencv-python mediapipe pyautogui
-Run the Project
+3. Run
 python main.py
 
-Allow camera access when requested.
+That's it. 🎉
 
-Once the camera window opens:
+Make sure your webcam is available and visible to the application.
 
-Show your hand in front of the webcam.
-Move your index finger to control the cursor.
-Pinch your index finger and thumb to click.
-Perform two separate pinches quickly to double-click.
-Raise index and middle fingers to perform a right-click.
-Press Q to close the application.
-How It Works
-Webcam
-   ↓
-OpenCV
-   ↓
-MediaPipe Hand Detection
-   ↓
-Hand Landmark Tracking
-   ↓
-Gesture Recognition
-   ↓
-PyAutoGUI
-   ↓
-Mouse Control
-
-MediaPipe detects the hand and tracks 21 hand landmarks. The position of the index finger is mapped to the computer screen coordinates for cursor movement.
-
-The distance between the thumb and index finger is calculated to detect the pinch gesture. Different finger configurations are used to identify left click, double click, and right click actions.
-
-Project Structure
-AI-Hand-Mouse-Control/
+🎮 Quick Demo
+Start Camera
+     ↓
+Show Hand
+     ↓
+☝️ Move Finger
+     ↓
+🖱️ Cursor Moves
+     ↓
+🤏 Pinch
+     ↓
+🖱️ Click
+     ↓
+🤏 Release + Pinch
+     ↓
+📂 Open File / Application
+📁 Project Structure
+AI-Hand-Mouse/
 │
 ├── main.py
-├── README.md
-└── requirements.txt
-Requirements
+├── requirements.txt
+└── README.md
+🔮 What's Next?
 
-Create a requirements.txt file:
+This project can be extended into a complete AI Gesture Control System.
 
-opencv-python
-mediapipe
-pyautogui
+Future Ideas
+🖱️ Drag & Drop
+📜 Scroll Up / Down
+🔊 Volume Control
+💡 Screen Brightness Control
+🎵 Media Controls
+🔍 Zoom In / Out
+✋ Custom User Gestures
+🤖 AI Voice + Gesture Control
+🖐️ Multi-Hand Interaction
+💡 Why This Project?
 
-Then install everything using:
+Traditional mouse interaction requires physical hardware.
 
-pip install -r requirements.txt
-Future Improvements
-Scroll control using hand gestures
-Drag and drop gesture
-Volume control
-Brightness control
-Media player controls
-Custom gesture configuration
-Multi-hand support
-Voice + gesture control
-Better adaptive cursor smoothing
-Use Cases
-Touchless computer interaction
-Accessibility
-Smart interfaces
-Human-computer interaction
-Computer vision demonstrations
-College AI/ML projects
-Gesture-based automation
-Author
+This project explores how Computer Vision + AI + Human-Computer Interaction can create a more natural and touchless way to interact with computers.
 
+Your hand becomes the controller.
+
+👨‍💻 Author
 Piyush Agar
 
-B.Tech AI & Data Science
+B.Tech — AI & Data Science
+
+Built with ❤️, Python and Computer Vision.
